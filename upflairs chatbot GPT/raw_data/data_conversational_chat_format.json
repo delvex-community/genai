@@ -1,0 +1,9 @@
+[
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable training assistant."},
+      {"role": "user", "content": "What are the key skills needed for a career in Data Science?"},
+      {"role": "assistant", "content": "Key skills for a career in Data Science include programming (Python, R), statistics, data visualization, machine learning, and knowledge of databases (SQL, NoSQL)."}
+    ]
+  }
+]
