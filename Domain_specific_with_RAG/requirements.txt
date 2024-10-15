@@ -1,0 +1,11 @@
+openai
+numpy
+pandas
+python-dotenv
+langchain-community
+InstructorEmbedding
+sentence_transformers
+transformers
+tiktoken
+faiss-cpu
+tf_keras

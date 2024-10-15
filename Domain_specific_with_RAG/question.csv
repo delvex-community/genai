@@ -1,0 +1,18 @@
+Question,Answer
+"How do you print 'Hello, World!' in Python?","print('Hello, World!')"
+How do you create a for loop that iterates from 1 to 5 in Python?,"for i in range(1, 6):
+	print(i)"
+How you can print 10 times 'welcome  at upflairs'?,"for i in range(0, 10):
+	print('welcome at upflairs')"
+How do you check if a number is even in Python?,"if number % 2 == 0:
+	print('Even')"
+How do you define a class in python?,"class Upflairs:
+	def __init__(self, name):
+		self.name = name"
+How do you create a list of squares from 1 to 5 using list comprehension?,"[x**2 for x in range(1, 6)]"
+How do you reverse a string in Python?,'hello'[::-1]
+How do you open a file and read its contents in Python?,"with open('upflairs.txt', 'r') as file:
+	contents = file.read()"
+How do you remove an item from a list in Python?,my_list.remove('upflairs')
+How do you find the maximum value in a list in Python?,max(my_list)
+How do you sort a list in Python?,my_list.sort()
