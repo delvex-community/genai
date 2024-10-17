@@ -4,6 +4,7 @@ import os
 # Data for the CSV file
 faq_data = {
     "Question": [
+        "tell me about upflairs?",
         "What courses does Upflairs offer?",
         "How can I enroll in a course?",
         "Are there any prerequisites for enrolling in the courses?",
@@ -20,6 +21,7 @@ faq_data = {
         "How do I contact support if I have any questions?"
     ],
     "Answer": [
+        "UpFlairs is an innovative educational technology company dedicated to empowering students across India. With a focus on emerging technologies like AI/ML, Data Science, Cloud computing, DevOps, Full Stack Web Development, Embedded Systems, IoT and Robotics. We've educated over 50K+ students worldwide, including those from prestigious institutions like IITs and NITs, Deemed Universities and Other engineering Colleges.Our courses are meticulously designed to equip students with practical skills for tech-driven careers, and we also provide lab setups to colleges, universities, and project solutions to companies in AI-ML, Web Development, IoT, Robotics, Cloud & DevOps domains.",
         "Upflairs offers courses in Data Science and Machine Learning, DevOps, Full Stack Development, IoT, and System Embedding. We also provide internships to help you gain real-world experience.",
         "You can enroll in any course by visiting the Upflairs website, selecting the course you're interested in, and clicking the 'Enroll Now' button. You'll be prompted to complete your registration and payment.",
         "Most courses at Upflairs do not require specific prerequisites. However, some technical courses like Full Stack Development or DevOps may benefit from prior knowledge of programming or cloud computing.",

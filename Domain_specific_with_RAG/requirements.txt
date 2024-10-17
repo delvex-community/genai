@@ -1,11 +1,10 @@
-openai
 numpy
 pandas
-python-dotenv
+langchain
+langchain-openai
 langchain-community
-InstructorEmbedding
-sentence_transformers
-transformers
-tiktoken
+langchain-core
+openai
 faiss-cpu
-tf_keras
+streamlit
+os-sys  
