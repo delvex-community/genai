@@ -63,9 +63,6 @@ def get_qa_chain(retriever):
     **My question is**: {question}
     """
 
-
-
-
     PROMPT = PromptTemplate(
         template=prompt_template, input_variables=["context","question"]
     )
