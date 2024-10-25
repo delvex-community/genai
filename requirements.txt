@@ -2,4 +2,8 @@ openai
 numpy
 pandas
 python-dotenv
+<<<<<<< HEAD
 langchain
+=======
+langchain-community
+>>>>>>> ranjitsingh
