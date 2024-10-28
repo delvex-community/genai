@@ -26,7 +26,7 @@ def to_create_faiss():
     combine_dataset = pd.concat([df2,df1])
     print("No of question and answers in the dataset : ",combine_dataset.shape[0])
 
-    final_data_file_path = r"Domain_specific_with_RAG\Data\final_data.csv"
+    final_data_file_path = r"Data\final_data.csv"
     combine_dataset.to_csv(final_data_file_path,index=False)
     print("successfully save your final dataset at : ",final_data_file_path)
 
