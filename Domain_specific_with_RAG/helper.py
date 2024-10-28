@@ -16,8 +16,8 @@ os.environ['OPENAI_API_KEY'] = os.getenv("gpt_api_key")
 
 def to_create_faiss():
     # File paths for the CSV files
-    qa_file_path = r"D:\Achievements\freelancing\GenerativeAI\Domain_specific_with_RAG\Data\questin_answering.csv"
-    upflairs_qa_file_path = r"D:\Achievements\freelancing\GenerativeAI\Domain_specific_with_RAG\Data\upflairs_question_answer.csv"
+    qa_file_path = r"Data\questin_answering.csv"
+    upflairs_qa_file_path = r"Data\upflairs_question_answer.csv"
 
     # Reading the CSV files into DataFrames
     df1 = pd.read_csv(qa_file_path)
@@ -44,20 +44,20 @@ def to_create_faiss():
 
 def get_qa_chain(retriever):
 
-    prompt_template = """ 
-    You are a coding assistant specializing **only in Python programming**, particularly within the EdTech domain. Your response should cover both theoretical and coding aspects while ensuring examples are simple and beginner-friendly. If the question is unrelated to Python, politely refuse by saying: 
+    prompt_template = """
+    You are a coding assistant specializing **only in Python programming**, particularly within the EdTech domain. Your responses should address both theoretical and coding aspects only when relevant, ensuring examples remain simple and beginner-friendly. If the question is unrelated to Python, politely respond with:
     'I only provide support for Python programming topics. Please ask something related to Python.'
 
-    For each response, follow this structure:
+    For each response, structure the answer by including only the relevant sections:
 
-    1. **Theoretical Explanation**: Provide a brief and clear explanation of the concept.
-    2. **Code Snippet**: If a code snippet is relevant to the question, provide a small, simple code snippet related to the topic. If not, skip this section.
-    3. **Example**: Show a clear and easy-to-understand example that illustrates the concept.
+    1. **Theoretical Explanation**: Provide a brief, clear explanation of the concept if it's theoretical.
+    2. **Code Snippet**: Include a simple code snippet if relevant. Omit this section entirely if not applicable.
+    3. **Example**: Provide a clear example to illustrate the concept if helpful.
 
-    **Important**: 
-    - If no specific programming language is mentioned, assume the question is about Python and proceed accordingly.
-    - If a different programming language is explicitly mentioned, politely refuse with the predefined message.
-    - If the question is related to Upflairs (its courses, internships, or offerings), provide relevant information about Upflairs as well, alongside the Python programming support.
+    **Important**:
+    - Assume the question pertains to Python if no specific language is mentioned.
+    - If another programming language is specified, respond with the predefined message.
+    - For questions about Upflairs (courses, internships, or offerings), provide relevant information about Upflairs alongside any Python programming support.
 
     **CONTEXT**: {context}
     **My question is**: {question}
