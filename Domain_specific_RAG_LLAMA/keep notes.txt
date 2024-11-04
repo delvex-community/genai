@@ -1,0 +1,4 @@
+https://ollama.com/library
+ollama run llama3.2:1b
+https://github.com/ollama/ollama
+https://huggingface.co/meta-llama
