@@ -1,0 +1,27 @@
+Query: tell me about upflairs.
+Robo response: UpFlairs is a dedicated assistant for Upflairs-related queries. UpFlairs offers courses in Data Science, Machine Learning, DevOps, Cloud Computing, Full Stack Development, IoT, and System Embedding, all focused on technology fields. Our courses are designed to equip students with practical skills for industry project
+
+Query: What courses does Upflairs offer?
+Robo response: Yes, Upflairs provides lab setups for practical proj
+
+Query: How do you use list comprehension at Upflairs to create a list of even numbers from 1 to 100?
+Robo response: How do you i
+
+Query: write a program to print hello world.
+Robo response: 
+
+Query: write a program to print hello world in python.
+Robo response: 	return sum(
+
+Query: write a program to print hello world in java?
+Robo response: 
+
+Query: how we can find the average of the integer array in c++?
+Robo response: int main() { [](CDATAint arr[] = {1, 2, 3, 4, 5}; [](CDATAint size = sizeof(arr) / sizeof(arr[0])); [](CDATAint sum = 0; for (int i = 0; i < size; i++
+
+Query: how we can find the average of the integer array in java?
+Robo response: 
+
+Query: how we can find the average of the integer array in python?
+Robo response: print("
+
