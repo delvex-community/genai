@@ -1,0 +1,109 @@
+User : How do you remove duplicates from a list of dictionaries in Python at Upflairs based on a specific key?
+Bot : seen = set()
+unique_dicts = [d for d in dict_list if d['key'] not in seen and not seen.add(d['key'])]
+
+User : How do you create a Python function at Upflairs to calculate the sum of squares of numbers from 1 to n?
+Bot : def sum_of_squares(n):
+	return sum(x ** 2 for x in range(1, n + 1))
+
+User : How do I contact support if I have any questions?
+Bot : You can contact support by clicking on the "Help" or "Contact Us" section on our website. From there, you can either chat with a live agent or send us an email.
+
+User : How do you handle exceptions at Upflairs while reading a file and catching multiple exceptions in Python?
+Bot : try:
+	with open('file.txt', 'r') as f:
+		data = f.read()
+except (IOError, ValueError) as e:
+	print(f'Error occurred: {e}')
+
+User : How long is the internship program at Upflairs?
+Bot : The internship program at Upflairs typically lasts for 3 months.
+
+User : How do you implement a context manager at Upflairs to safely handle opening and closing files?
+Bot : class FileManager:
+	def __enter__(self):
+		self.file = open('file.txt', 'r')
+		return self.file
+	def __exit__(self, exc_type, exc_val, exc_tb):
+		self.file.close()
+
+User : How do you create a Python decorator at Upflairs that logs the function name before execution?
+Bot : def log_function(func):
+	def wrapper(*args, **kwargs):
+		print(f"Function {func.__name__} is running")
+		return func(*args, **kwargs)
+	return wrapper
+
+User : How do you implement a custom Python class at Upflairs to handle complex numbers with addition and subtraction?
+Bot : class Complex:
+	def __init__(self, real, imag):
+		self.real = real
+		self.imag = imag
+	def __add__(self, other):
+		return Complex(self.real + other.real, self.imag + other.imag)
+	def __sub__(self, other):
+		return Complex(self.real - other.real, self.imag - other.imag)
+	def __repr__(self):
+		return f'{self.real} + {self.imag}i'
+
+User : How do you implement matrix multiplication at Upflairs using nested loops in Python?
+Bot : def matrix_multiply(A, B):
+	rows_A, cols_A = len(A), len(A[0])
+	rows_B, cols_B = len(B), len(B[0])
+	
+	if cols_A != rows_B:
+		raise ValueError("Incompatible matrices for multiplication")
+	
+	result = [[0 for _ in range(cols_B)] for _ in range(rows_A)]
+	
+	for i in range(rows_A):
+		for j in range(cols_B):
+			for k in range(cols_A):
+				result[i][j] += A[i][k] * B[k][j]
+	
+	return result
+
+User : How do you implement a binary tree at Upflairs using a Python class and perform in-order traversal?
+Bot : class Node:
+	def __init__(self, key):
+		self.left = None
+		self.right = None
+		self.val = key
+
+def inorder(root):
+	if root:
+		inorder(root.left)
+		print(root.val)
+		inorder(root.right)
+
+User : Is there any career guidance or support at Upflairs?
+Bot : Yes, Upflairs offers career guidance and support through workshops, mentorship programs, and one-on-one counseling sessions to help students navigate their career paths effectively.
+
+User : Can I access recorded lectures if I miss a live class?
+Bot : Yes, most courses provide recorded lectures that you can access if you miss a live class. Check your course platform or syllabus for details.
+
+User : How do you create a Python generator at Upflairs to generate an infinite sequence of prime numbers?
+Bot : def prime_generator():
+	D = {}
+	q = 2
+	while True:
+		if q not in D:
+			yield q
+			D[q * q] = [q]
+		else:
+			for p in D[q]:
+				D.setdefault(p + q, []).append(p)
+		del D[q]
+		q += 1
+
+User : How do you create a lambda function at Upflairs to filter out even numbers from a list?
+Bot : filtered_list = list(filter(lambda x: x % 2 == 0, my_list))
+
+User : How do you write a Python function at Upflairs to check if a string is a palindrome?
+Bot : def is_palindrome(s):
+	s = s.lower()
+	return s == s[::-1]
+
+User : Do you offer internships after the course completion?
+Bot : Yes, we offer internships to students who successfully complete the course. You'll have the opportunity to work on real projects and gain practical industry experience.
+
