@@ -1,0 +1,8 @@
+# Usefull links
+https://huggingface.co/meta-llama  # huggingface page of llama
+https://medium.com/@rschaeffer23/how-to-fine-tune-llama-3-1-8b-instruct-bf0a84af7795  #blog fine-tuning
+
+wandb.ai
+portal : https://wandb.ai/ranjit-upflairs-upflairs-pvt
+organization url : ranjit............
+api key : 546e29b66a3482e..................
