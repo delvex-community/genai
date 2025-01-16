@@ -1,0 +1,151 @@
+Question,Answer
+tell me about upflairs?,"UpFlairs is an innovative educational technology company dedicated to empowering students across India. With a focus on emerging technologies like AI/ML, Data Science, Cloud computing, DevOps, Full Stack Web Development, Embedded Systems, IoT and Robotics. We've educated over 50K+ students worldwide, including those from prestigious institutions like IITs and NITs, Deemed Universities and Other engineering Colleges.Our courses are meticulously designed to equip students with practical skills for tech-driven careers, and we also provide lab setups to colleges, universities, and project solutions to companies in AI-ML, Web Development, IoT, Robotics, Cloud & DevOps domains."
+What courses does Upflairs offer?,"Upflairs offers courses in Data Science and Machine Learning, DevOps, Full Stack Development, IoT, and System Embedding. We also provide internships to help you gain real-world experience."
+How can I enroll in a course?,"You can enroll in any course by visiting the Upflairs website, selecting the course you're interested in, and clicking the 'Enroll Now' button. You'll be prompted to complete your registration and payment."
+Are there any prerequisites for enrolling in the courses?,"Most courses at Upflairs do not require specific prerequisites. However, some technical courses like Full Stack Development or DevOps may benefit from prior knowledge of programming or cloud computing."
+Do you offer internships after the course completion?,"Yes! Upflairs offers internship opportunities for students who successfully complete our courses, allowing you to gain practical industry experience."
+How long is the internship program at Upflairs?,"Our internship programs typically last 3-6 months, depending on the field and project complexity. You'll get hands-on experience and work with industry professionals."
+Will I get a certificate after completing the internship?,"Yes, upon successfully completing the internship, you will receive a certificate of completion that you can showcase in your portfolio or resume."
+Is the internship paid or unpaid?,Upflairs offers both paid and unpaid internship opportunities. Specific details are provided based on the project and your role.
+Does Upflairs provide a job placement after course completion?,"While Upflairs does not guarantee job placements, we offer career counseling, resume-building workshops, and interview preparation to help you secure a job in your desired field."
+Can I access recorded lectures if I miss a live class?,"Yes, all our live classes are recorded, and you can access them at any time from your student portal."
+Is there any career guidance or support at Upflairs?,"Yes, we offer career counseling, resume-building workshops, and interview preparation sessions to help students advance in their careers."
+Are the courses at Upflairs self-paced?,"Some courses are self-paced, while others have live sessions. Details for each course are provided on our course page."
+What are the payment options for Upflairs courses?,"We accept various payment options including credit/debit cards, net banking, and UPI. Flexible EMI options are also available for some courses."
+Is there any refund policy at Upflairs?,"Yes, we have a refund policy in place. You can request a refund within the first 7 days of course enrollment if you're unsatisfied."
+How do I contact support if I have any questions?,You can contact our support team by emailing support@upflairs.com or through the live chat feature on our website.
+How do you create a Python function to calculate the factorial of a number at Upflairs without using recursion?,"def factorial(n):
+	result = 1
+	for i in range(1, n + 1):
+		result *= i
+	return result"
+How do you implement a custom Python class at Upflairs to handle complex numbers with addition and subtraction?,"class Complex:
+	def __init__(self, real, imag):
+		self.real = real
+		self.imag = imag
+	def __add__(self, other):
+		return Complex(self.real + other.real, self.imag + other.imag)
+	def __sub__(self, other):
+		return Complex(self.real - other.real, self.imag - other.imag)"
+How do you read a CSV file into a pandas DataFrame and calculate the mean of a specific column in Upflairs' Data Science course?,"import pandas as pd
+ df = pd.read_csv('file.csv')
+mean_value = df['column_name'].mean()
+print(mean_value)"
+How do you create a Python decorator at Upflairs that logs the function name before execution?,"from functools import wraps
+
+def log_function(func):
+	@wraps(func)
+	def wrapper(*args, **kwargs):
+		print(f'Function {func.__name__} is running')
+		return func(*args, **kwargs)
+	return wrapper"
+How do you write a Python program at Upflairs to reverse a string without using built-in reverse functions?,"def reverse_string(s):
+	result = ''
+	for char in s:
+		result = char + result
+	return result
+print(reverse_string('Welcome to Upflairs'))"
+How do you implement a recursive function at Upflairs to find the nth Fibonacci number?,"def fibonacci(n):
+	if n <= 1:
+		return n
+	else:
+		return fibonacci(n-1) + fibonacci(n-2)
+print(fibonacci(10))"
+How do you use list comprehension at Upflairs to create a list of even numbers from 1 to 100?,"[x for x in range(1, 101) if x % 2 == 0]"
+How do you remove duplicates from a list of dictionaries in Python at Upflairs based on a specific key?,"seen = set()
+unique_dicts = [d for d in dict_list if d['key'] not in seen and not seen.add(d['key'])]"
+How do you implement matrix multiplication at Upflairs using nested loops in Python?,"result = [[sum(a * b for a, b in zip(X_row, Y_col)) for Y_col in zip(*Y)] for X_row in X]"
+How do you implement a context manager at Upflairs to safely handle opening and closing files?,"class FileManager:
+	def __enter__(self):
+		self.file = open('file.txt', 'r')
+		return self.file
+	def __exit__(self, exc_type, exc_val, exc_tb):
+		self.file.close()"
+How do you write a Python function at Upflairs to find the longest word in a given sentence?,"def longest_word(sentence):
+	words = sentence.split()
+	return max(words, key=len)
+print(longest_word('Welcome to Upflairs'))"
+How do you implement quicksort at Upflairs using Python's divide-and-conquer approach?,"def quicksort(arr):
+	if len(arr) <= 1:
+		return arr
+	pivot = arr[len(arr) // 2]
+	left = [x for x in arr if x < pivot]
+	middle = [x for x in arr if x == pivot]
+	right = [x for x in arr if x > pivot]
+	return quicksort(left) + middle + quicksort(right)"
+How do you merge two DataFrames in pandas on a common column at Upflairs with an inner join?,"df_merged = pd.merge(df1, df2, on='common_column', how='inner')"
+How do you write a Python function at Upflairs to check if a string is a palindrome?,"def is_palindrome(s):
+	s = s.lower()
+	return s == s[::-1]
+print(is_palindrome('Upflairs'))"
+How do you use SQL queries with pandas at Upflairs to filter a DataFrame based on a condition?,"filtered_df = df.query('column_name > 100')
+print(filtered_df)"
+How do you implement memoization in a recursive function at Upflairs to optimize performance?,"def memoize_fibonacci(n, memo={}):
+	if n in memo:
+		return memo[n]
+	if n <= 1:
+		return n
+	memo[n] = memoize_fibonacci(n-1, memo) + memoize_fibonacci(n-2, memo)
+	return memo[n]
+print(memoize_fibonacci(10))"
+How do you create a Python function at Upflairs to calculate the sum of squares of numbers from 1 to n?,"def sum_of_squares(n):
+	return sum(x ** 2 for x in range(1, n + 1))
+print(sum_of_squares(5))"
+How do you implement a binary search algorithm at Upflairs for a sorted list in Python?,"def binary_search(arr, target):
+	low, high = 0, len(arr) - 1
+	while low <= high:
+		mid = (low + high) // 2
+		if arr[mid] == target:
+			return mid
+		elif arr[mid] < target:
+			low = mid + 1
+		else:
+			high = mid - 1
+	return -1"
+How do you handle exceptions at Upflairs while reading a file and catching multiple exceptions in Python?,"try:
+	with open('file.txt', 'r') as f:
+		data = f.read()
+except (IOError, ValueError) as e:
+	print(f'Error occurred: {e}')"
+How do you serialize and deserialize a Python object at Upflairs using the pickle module?,"import pickle
+obj = MyClass()
+with open('data.pkl', 'wb') as f:
+	pickle.dump(obj, f)
+with open('data.pkl', 'rb') as f:
+	obj_loaded = pickle.load(f)"
+How do you create a lambda function at Upflairs to filter out even numbers from a list?,"filtered_list = list(filter(lambda x: x % 2 == 0, my_list))"
+How do you create a Python generator at Upflairs to generate an infinite sequence of prime numbers?,"def prime_generator():
+	D = {}
+	q = 2
+	while True:
+		if q not in D:
+			yield q
+			D[q * q] = [q]
+		else:
+			for p in D[q]:
+				D.setdefault(p + q, []).append(p)
+		del D[q]
+		q += 1"
+How do you create a REST API at Upflairs using Flask that handles GET and POST requests?,"from flask import Flask, request
+app = Flask(__name__)
+
+@app.route('/api', methods=['GET', 'POST'])
+def api():
+	if request.method == 'GET':
+		return 'GET request received'
+	elif request.method == 'POST':
+		return 'POST request received'
+
+if __name__ == '__main__':
+	app.run()"
+How do you implement a binary tree at Upflairs using a Python class and perform in-order traversal?,"class Node:
+	def __init__(self, key):
+		self.left = None
+		self.right = None
+		self.val = key
+
+def inorder(root):
+	if root:
+		inorder(root.left)
+		print(root.val)
+		inorder(root.right)"
