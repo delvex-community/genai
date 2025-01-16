@@ -17,6 +17,5 @@ max_seq_length = 2048
 dtype = None 
 load_in_4bit = True  
 
-model, tokenizer = load_model_and_tokenizer(model_name, max_seq_length, dtype, load_in_4bit)
 
 
