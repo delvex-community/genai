@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html') 
 
-model, tokenizer = load_model_and_tokenizer()
+fine_tuned_model, tokenizer = load_model_and_tokenizer()
 
 def data_transformation(user_query,tokenizer):
     system_prompt = """You are a specialized assistant for Upflairs,
@@ -30,18 +30,19 @@ def data_transformation(user_query,tokenizer):
                                             return_tensors = "pt").to("cuda")
     return  inputs
 def llama_response(inputs,LLM):
-    pass 
+    outputs = model.generate(input_ids = inputs, max_new_tokens = 64, use_cache = True,
+                         temperature = 1, min_p = 0.1) 
+    response = tokenizer.batch_decode(outputs)
+    response = response[0].split('\n')[-1] # filterig the response
+    return response
 
 @app.route('/get_response', methods=['POST'])
 def get_response():
-    # Get the user message from the request
     user_message = request.form.get('user_message', '')
 
-    # Basic logic to generate a chatbot response
     if not user_message.strip():
         return "I didn't catch that. Could you rephrase it?"
 
-    # Example: simple keyword-based responses
     if "hello" in user_message.lower():
         bot_response = "Hello! How can I assist you today?"
     elif "how are you" in user_message.lower():
@@ -50,10 +51,9 @@ def get_response():
         bot_response = "Goodbye! Have a great day!"
     else:
         input_query  = data_transformation(user_query=user_message.lower(),tokenizer=tokenizer)
-        bot_response = llama_response(inputs=input_query,LLM=None) # passing message to the llama
+        bot_response = llama_response(inputs=input_query,LLM=fine_tuned_model) # passing message to the llama
 
     return bot_response
 
 if __name__ == '__main__':
-    # Run the Flask app
     app.run(debug=True)
