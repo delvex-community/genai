@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-from llm_loader import load_model_and_tokenizer
+# from llm_loader import load_model_and_tokenizer
 
 app = Flask(__name__)
 
@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html') 
 
-fine_tuned_model, tokenizer = load_model_and_tokenizer()
+# fine_tuned_model, tokenizer = load_model_and_tokenizer()
 
 def data_transformation(user_query,tokenizer):
     system_prompt = """You are a specialized assistant for Upflairs,
